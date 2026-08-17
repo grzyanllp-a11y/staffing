@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grzyan Staffing | Recruitment &amp; Staffing Solutions</title>
+<meta name="description" content="Grzyan Staffing provides recruitment, staffing, manpower and workforce solutions connecting businesses with the right talent.">
+<meta property="og:title" content="Grzyan Staffing | Connecting Talent With Opportunity">
+<meta property="og:description" content="Smart staffing. Exceptional people. Better businesses.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://www.grzyan.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EmploymentAgency",
+  "name": "Grzyan Staffing",
+  "url": "https://www.grzyan.com",
+  "sameAs": ["https://grzyan.online"],
+  "telephone": "+91 7893107676"
+}
+</script>
+<style>
+:root{
+  --navy:#07111F;
+  --midnight:#0B172A;
+  --charcoal:#111827;
+  --blue:#1683FF;
+  --cyan:#22D3EE;
+  --white:#FFFFFF;
+  --soft-gray:#CBD5E1;
+  --muted:#64748B;
+  --line: rgba(203,213,225,0.10);
+  --grad: linear-gradient(120deg,var(--blue),var(--cyan));
+  --ff-display:'Sora',sans-serif;
+  --ff-body:'Inter',sans-serif;
+  --ff-mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--navy);
+  color:var(--soft-gray);
+  font-family:var(--ff-body);
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+h1,h2,h3,h4{font-family:var(--ff-display);color:var(--white);letter-spacing:-0.02em;}
+.eyebrow{
+  font-family:var(--ff-mono);
+  font-size:.72rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--cyan);
+  display:flex;align-items:center;gap:.6rem;
+}
+.eyebrow::before{content:'';width:22px;height:1px;background:var(--cyan);display:inline-block;}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px;}
+section{position:relative;padding:120px 0;}
+@media(max-width:768px){section{padding:80px 0;} .wrap{padding:0 20px;}}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}
+}
+
+/* ---------- NAV ---------- */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:22px 0;
+  transition:background .4s ease, padding .4s ease, border-color .4s ease;
+  border-bottom:1px solid transparent;
+}
+#nav.scrolled{
+  background:rgba(7,17,31,0.88);
+  backdrop-filter:blur(14px);
+  padding:14px 0;
+  border-color:var(--line);
+}
+#nav .wrap{display:flex;align-items:center;justify-content:space-between;}
+.logo{display:flex;flex-direction:column;line-height:1;font-family:var(--ff-display);font-weight:800;}
+.logo span:first-child{font-size:1.15rem;color:var(--white);letter-spacing:.06em;}
+.logo span:last-child{font-size:.62rem;letter-spacing:.32em;color:var(--cyan);margin-top:3px;}
+.nav-links{display:flex;gap:34px;list-style:none;}
+.nav-links a{font-size:.88rem;color:var(--soft-gray);position:relative;padding:4px 0;}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--grad);transition:width .3s ease;}
+.nav-links a:hover{color:var(--white);}
+.nav-links a:hover::after{width:100%;}
+.nav-actions{display:flex;align-items:center;gap:14px;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.85rem;font-weight:600;padding:12px 22px;border-radius:999px;
+  transition:transform .35s cubic-bezier(.2,.9,.3,1), box-shadow .35s ease, background .3s ease;
+  white-space:nowrap;
+}
+.btn-primary{background:var(--grad);color:#05101c;font-weight:700;box-shadow:0 8px 24px -8px rgba(22,131,255,.55);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -8px rgba(34,211,238,.55);}
+.btn-ghost{border:1px solid var(--line);color:var(--white);}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan);}
+.btn-wa{background:rgba(34,211,238,0.08);border:1px solid rgba(34,211,238,0.35);color:var(--cyan);}
+.btn-wa:hover{background:rgba(34,211,238,0.16);}
+.hamburger{display:none;flex-direction:column;gap:5px;width:26px;}
+.hamburger span{height:2px;background:var(--white);border-radius:2px;transition:transform .35s ease, opacity .3s ease;}
+.mobile-menu{
+  position:fixed;inset:0;background:var(--midnight);z-index:99;
+  display:flex;flex-direction:column;padding:110px 32px 40px;gap:26px;
+  transform:translateY(-100%);transition:transform .5s cubic-bezier(.2,.9,.3,1);
+}
+.mobile-menu.open{transform:translateY(0);}
+.mobile-menu a{font-family:var(--ff-display);font-size:1.6rem;color:var(--white);font-weight:600;}
+@media(max-width:920px){
+  .nav-links{display:none;}
+  .nav-actions .btn-ghost span.long{display:none;}
+  .hamburger{display:flex;}
+}
+
+/* ---------- HERO ---------- */
+#hero{
+  min-height:100vh;display:flex;align-items:center;position:relative;
+  padding-top:120px;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 15%, rgba(22,131,255,.22), transparent 60%),
+    radial-gradient(ellipse 55% 45% at 10% 85%, rgba(34,211,238,.14), transparent 60%),
+    var(--navy);
+  overflow:hidden;
+}
+#hero canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55;}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent 75%);
+  opacity:.6;
+}
+.hero-inner{position:relative;z-index:3;max-width:820px;}
+.hero-inner .eyebrow{margin-bottom:22px;opacity:0;animation:riseIn .8s .1s ease forwards;}
+.hero-inner h1{
+  font-size:clamp(2.6rem,6vw,4.6rem);font-weight:800;line-height:1.04;
+  margin-bottom:24px;
+}
+.hero-inner h1 .line{display:block;overflow:hidden;}
+.hero-inner h1 .line span{display:inline-block;opacity:0;transform:translateY(110%);animation:riseIn .9s cubic-bezier(.2,.9,.2,1) forwards;}
+.hero-inner h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero-inner p.lead{
+  font-size:1.15rem;color:var(--soft-gray);max-width:560px;margin-bottom:38px;
+  opacity:0;animation:riseIn .8s .5s ease forwards;
+}
+.hero-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;opacity:0;animation:riseIn .8s .65s ease forwards;}
+.hero-sub{margin-top:44px;display:flex;gap:32px;flex-wrap:wrap;opacity:0;animation:riseIn .8s .8s ease forwards;}
+.hero-sub div{font-family:var(--ff-mono);font-size:.78rem;color:var(--muted);}
+.hero-sub div b{display:block;color:var(--white);font-family:var(--ff-display);font-size:1.3rem;font-weight:700;}
+@keyframes riseIn{to{opacity:1;transform:translateY(0);}}
+
+.shape{position:absolute;border-radius:32%;filter:blur(2px);opacity:.5;animation:float 9s ease-in-out infinite;}
+.shape1{width:170px;height:170px;right:8%;top:18%;background:linear-gradient(135deg,rgba(22,131,255,.35),rgba(34,211,238,.05));animation-delay:0s;}
+.shape2{width:90px;height:90px;right:22%;top:60%;background:linear-gradient(135deg,rgba(34,211,238,.4),transparent);animation-delay:1.2s;}
+.shape3{width:120px;height:120px;right:2%;bottom:8%;border-radius:50%;background:linear-gradient(135deg,rgba(22,131,255,.25),transparent);animation-delay:2s;}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-26px) rotate(8deg);}}
+@media(max-width:920px){.shape{display:none;}}
+
+/* floating whatsapp */
+.wa-float{
+  position:fixed;bottom:26px;right:26px;z-index:90;
+  display:flex;align-items:center;gap:10px;
+  background:var(--grad);color:#05101c;font-weight:700;font-size:.85rem;
+  padding:14px 20px;border-radius:999px;box-shadow:0 10px 30px -8px rgba(34,211,238,.5);
+  animation:pulse 2.6s ease-in-out infinite;
+}
+.wa-float:hover{transform:translateY(-3px);}
+@keyframes pulse{0%,100%{box-shadow:0 10px 30px -8px rgba(34,211,238,.5);}50%{box-shadow:0 10px 42px -6px rgba(34,211,238,.85);}}
+@media(max-width:600px){.wa-float span.long{display:none;}}
+
+/* ---------- REVEAL ---------- */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .9s cubic-bezier(.2,.8,.2,1), transform .9s cubic-bezier(.2,.8,.2,1);}
+.reveal.in{opacity:1;transform:translateY(0);}
+.reveal-stagger > *{opacity:0;transform:translateY(30px);transition:opacity .7s ease, transform .7s ease;}
+.reveal-stagger.in > *{opacity:1;transform:translateY(0);}
+.reveal-stagger.in > *:nth-child(1){transition-delay:.05s;}
+.reveal-stagger.in > *:nth-child(2){transition-delay:.14s;}
+.reveal-stagger.in > *:nth-child(3){transition-delay:.23s;}
+.reveal-stagger.in > *:nth-child(4){transition-delay:.32s;}
+.reveal-stagger.in > *:nth-child(5){transition-delay:.41s;}
+.reveal-stagger.in > *:nth-child(6){transition-delay:.5s;}
+
+/* section heads */
+.section-head{max-width:640px;margin-bottom:64px;}
+.section-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:700;margin-top:16px;}
+.section-head p{margin-top:16px;color:var(--muted);font-size:1.02rem;}
+
+/* ---------- ABOUT / STATS ---------- */
+#about{background:var(--midnight);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start;}
+.about-grid p{color:var(--muted);margin-bottom:16px;font-size:1.02rem;}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:8px;}
+.stat-card{
+  border:1px solid var(--line);border-radius:18px;padding:28px 24px;
+  background:linear-gradient(160deg, rgba(22,131,255,.06), transparent 60%);
+}
+.stat-card .num{font-family:var(--ff-display);font-size:2.6rem;font-weight:800;color:var(--white);}
+.stat-card .num::after{content:'+';color:var(--cyan);}
+.stat-card .label{font-size:.82rem;color:var(--muted);margin-top:6px;}
+.editable-note{font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);margin-top:14px;letter-spacing:.04em;}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px;}}
+
+/* ---------- SERVICES ---------- */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.service-card{
+  border:1px solid var(--line);border-radius:20px;padding:32px 28px;position:relative;overflow:hidden;
+  background:var(--charcoal);transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s ease, background .4s ease;
+}
+.service-card::before{
+  content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 0%, rgba(34,211,238,.14), transparent 55%);
+  opacity:0;transition:opacity .4s ease;
+}
+.service-card:hover{transform:translateY(-6px);border-color:rgba(34,211,238,.4);}
+.service-card:hover::before{opacity:1;}
+.service-num{font-family:var(--ff-mono);font-size:.72rem;color:var(--cyan);}
+.service-icon{
+  width:44px;height:44px;border-radius:12px;margin:16px 0 18px;
+  background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:1.2rem;
+}
+.service-card h3{font-size:1.12rem;margin-bottom:10px;}
+.service-card p{color:var(--muted);font-size:.92rem;margin-bottom:20px;}
+.service-links{display:flex;gap:18px;font-size:.82rem;font-weight:600;position:relative;z-index:2;}
+.service-links a{color:var(--cyan);}
+.service-links a:last-child{color:var(--soft-gray);}
+.service-links a:hover{text-decoration:underline;}
+@media(max-width:980px){.services-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:620px){.services-grid{grid-template-columns:1fr;}}
+
+/* ---------- INDUSTRIES ---------- */
+#industries{background:var(--midnight);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;}
+.industry-track{display:flex;gap:16px;width:max-content;animation:scrollX 34s linear infinite;}
+#industries:hover .industry-track{animation-play-state:paused;}
+@keyframes scrollX{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.industry-pill{
+  border:1px solid var(--line);padding:16px 26px;border-radius:14px;background:var(--navy);
+  font-family:var(--ff-display);font-weight:600;color:var(--soft-gray);font-size:.98rem;white-space:nowrap;
+  transition:border-color .3s ease,color .3s ease;
+}
+.industry-pill:hover{border-color:var(--cyan);color:var(--white);}
+
+/* ---------- EMPLOYER / CANDIDATE SPLIT ---------- */
+.split{
+  border:1px solid var(--line);border-radius:26px;padding:56px;position:relative;overflow:hidden;
+}
+.split.employer{background:linear-gradient(150deg, rgba(22,131,255,.10), var(--charcoal) 60%);margin-bottom:26px;}
+.split.candidate{background:linear-gradient(150deg, rgba(34,211,238,.10), var(--charcoal) 60%);}
+.split h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:14px;}
+.split p{color:var(--muted);max-width:520px;margin-bottom:26px;}
+.split-actions{display:flex;gap:14px;flex-wrap:wrap;}
+@media(max-width:640px){.split{padding:32px 24px;}}
+
+/* forms */
+.form-toggle{display:none;margin-top:36px;}
+.form-toggle.open{display:block;animation:riseIn .5s ease forwards;}
+form.grzyan-form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px;}
+form.grzyan-form .full{grid-column:1/-1;}
+.field label{display:block;font-size:.78rem;color:var(--muted);margin-bottom:6px;font-family:var(--ff-mono);letter-spacing:.03em;}
+.field input, .field select, .field textarea{
+  width:100%;background:rgba(7,17,31,.6);border:1px solid var(--line);border-radius:10px;
+  padding:12px 14px;color:var(--white);font-family:var(--ff-body);font-size:.92rem;
+  transition:border-color .3s ease, background .3s ease;
+}
+.field input:focus, .field select:focus, .field textarea:focus{outline:none;border-color:var(--cyan);background:rgba(7,17,31,.9);}
+.field input[type=file]{padding:10px;color:var(--muted);}
+.form-msg{margin-top:16px;font-size:.88rem;font-family:var(--ff-mono);display:none;}
+.form-msg.show{display:block;}
+.form-msg.success{color:var(--cyan);}
+.form-msg.error{color:#ff8a8a;}
+
+/* ---------- JOBS ---------- */
+.jobs-filter{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px;}
+.jobs-filter select, .jobs-filter input{
+  background:var(--charcoal);border:1px solid var(--line);border-radius:10px;color:var(--white);
+  padding:11px 14px;font-size:.85rem;font-family:var(--ff-body);
+}
+.job-list{display:flex;flex-direction:column;gap:16px;}
+.job-card{
+  border:1px solid var(--line);border-radius:16px;padding:24px 28px;
+  display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+  background:var(--charcoal);transition:border-color .3s ease, transform .3s ease;
+}
+.job-card:hover{border-color:rgba(22,131,255,.45);transform:translateX(4px);}
+.job-card h4{font-size:1.05rem;margin-bottom:6px;}
+.job-meta{display:flex;gap:16px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);font-family:var(--ff-mono);}
+.job-tag{border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-family:var(--ff-mono);font-size:.68rem;color:var(--cyan);align-self:flex-start;margin-bottom:8px;display:inline-block;}
+.demo-badge{font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);border:1px dashed var(--muted);padding:4px 10px;border-radius:999px;margin-bottom:22px;display:inline-block;}
+
+/* ---------- PROCESS TIMELINE ---------- */
+.timeline{position:relative;padding-left:34px;}
+.timeline::before{content:'';position:absolute;left:9px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--blue),var(--cyan));}
+.tl-item{position:relative;padding-bottom:52px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-item::before{
+  content:'';position:absolute;left:-34px;top:2px;width:19px;height:19px;border-radius:50%;
+  background:var(--navy);border:2px solid var(--cyan);
+}
+.tl-item .step{font-family:var(--ff-mono);font-size:.72rem;color:var(--cyan);}
+.tl-item h3{font-size:1.25rem;margin:6px 0 8px;}
+.tl-item p{color:var(--muted);max-width:480px;}
+
+/* ---------- WHY GRZYAN ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.why-card{border:1px solid var(--line);border-radius:16px;padding:26px 22px;background:var(--charcoal);}
+.why-card .ic{width:36px;height:36px;border-radius:10px;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.3);display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--cyan);font-weight:700;}
+.why-card h4{font-size:.98rem;margin-bottom:8px;}
+.why-card p{font-size:.85rem;color:var(--muted);}
+@media(max-width:980px){.why-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.why-grid{grid-template-columns:1fr;}}
+
+/* ---------- TRUST ---------- */
+.trust-strip{display:flex;gap:40px;flex-wrap:wrap;align-items:center;justify-content:space-between;opacity:.55;margin-bottom:60px;}
+.trust-strip .logo-ph{border:1px dashed var(--line);border-radius:10px;padding:16px 26px;font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.testi-card{border:1px solid var(--line);border-radius:16px;padding:26px;background:var(--charcoal);}
+.testi-card p{font-size:.9rem;color:var(--soft-gray);font-style:italic;}
+.testi-card .who{margin-top:16px;font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);}
+@media(max-width:860px){.testi-grid{grid-template-columns:1fr;}}
+
+/* ---------- CONTACT ---------- */
+#contact{background:var(--midnight);border-top:1px solid var(--line);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
+.contact-list{display:flex;flex-direction:column;gap:18px;margin-top:28px;}
+.contact-row{display:flex;align-items:center;gap:14px;border:1px solid var(--line);padding:16px 18px;border-radius:14px;}
+.contact-row .ic{width:38px;height:38px;border-radius:10px;background:var(--grad);display:flex;align-items:center;justify-content:center;color:#05101c;font-weight:700;}
+.map-ph{
+  border:1px dashed var(--line);border-radius:18px;height:100%;min-height:280px;
+  display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);
+  font-family:var(--ff-mono);font-size:.78rem;padding:30px;
+}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:30px;}}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--charcoal);border-top:1px solid var(--line);padding:70px 0 30px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;margin-bottom:50px;}
+.footer-grid h4{color:var(--white);font-size:.85rem;margin-bottom:16px;font-family:var(--ff-mono);letter-spacing:.05em;}
+.footer-grid ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-grid ul a{color:var(--muted);font-size:.9rem;}
+.footer-grid ul a:hover{color:var(--cyan);}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;border-top:1px solid var(--line);padding-top:26px;font-size:.78rem;color:var(--muted);}
+.social-ph{display:flex;gap:10px;}
+.social-ph span{width:34px;height:34px;border:1px dashed var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;}
+@media(max-width:760px){.footer-grid{grid-template-columns:1fr;gap:30px;}}
+
+/* focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+  outline:2px solid var(--cyan);outline-offset:3px;
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="wrap">
+    <a href="#hero" class="logo"><span>GRZYAN</span><span>STAFFING</span></a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#employers">Employers</a></li>
+      <li><a href="#candidates">Job Seekers</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#why">Why Grzyan</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-wa" href="https://wa.me/917893107676?text=Hello%20Grzyan%20Staffing%2C%20I%20would%20like%20to%20know%20more%20about%20your%20staffing%20services." target="_blank" rel="noopener"><span class="long">WhatsApp</span></a>
+      <a class="btn btn-primary" href="#employers">Get Started</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#employers">Employers</a>
+  <a href="#candidates">Job Seekers</a>
+  <a href="#industries">Industries</a>
+  <a href="#why">Why Grzyan</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <canvas id="heroCanvas"></canvas>
+  <div class="shape shape1"></div>
+  <div class="shape shape2"></div>
+  <div class="shape shape3"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Recruitment · Staffing · Workforce Solutions</p>
+    <h1>
+      <span class="line"><span style="animation-delay:.15s">Connecting Talent</span></span>
+      <span class="line"><span class="grad" style="animation-delay:.3s">With Opportunity.</span></span>
+    </h1>
+    <p class="lead">Grzyan Staffing connects businesses with skilled, reliable and motivated professionals through efficient recruitment, staffing and workforce solutions.</p>
+    <div class="hero-cta">
+      <a href="#employers" class="btn btn-primary">Find Talent</a>
+      <a href="#candidates" class="btn btn-ghost">Find Jobs</a>
+      <a href="tel:+917893107676" class="btn btn-ghost">Call Now: +91 7893107676</a>
+    </div>
+    <div class="hero-sub">
+      <div><b id="statCandidates">0</b>Candidates Connected</div>
+      <div><b id="statEmployers">0</b>Employers Served</div>
+      <div><b id="statIndustries">0</b>Industries Covered</div>
+    </div>
+  </div>
+</section>
+
+<a class="wa-float" href="https://wa.me/917893107676?text=Hello%20Grzyan%20Staffing%2C%20I%20would%20like%20to%20know%20more%20about%20your%20staffing%20services." target="_blank" rel="noopener">
+  💬 <span class="long">Chat on WhatsApp</span>
+</a>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="eyebrow">About Grzyan Staffing</p>
+        <h2 style="margin-top:16px;font-size:clamp(1.9rem,3.4vw,2.6rem);">People Are Our Business.</h2>
+        <p style="margin-top:20px;">Grzyan Staffing helps organizations identify, attract and connect with capable professionals — while helping candidates discover meaningful career opportunities. We combine hands-on recruitment expertise with a technology-driven process built for speed and accuracy.</p>
+        <p>Every engagement is treated as a partnership: we take time to understand the role, the culture and the outcome our clients need, then move quickly to deliver it.</p>
+      </div>
+      <div class="reveal reveal-stagger stat-grid">
+        <div class="stat-card"><div class="num" data-count="0">0</div><div class="label">Candidates Connected</div></div>
+        <div class="stat-card"><div class="num" data-count="0">0</div><div class="label">Employers Served</div></div>
+        <div class="stat-card"><div class="num" data-count="0">0</div><div class="label">Industries Covered</div></div>
+        <div class="stat-card"><div class="num" data-count="0">0</div><div class="label">Successful Placements</div></div>
+      </div>
+    </div>
+    <p class="editable-note">* Figures shown are editable placeholders — update in CONFIG.stats once verified data is available.</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">What We Do</p>
+      <h2>Staffing Solutions Built Around Your Business.</h2>
+      <p>From single critical hires to large-scale workforce deployment, our services flex to the shape of your requirement.</p>
+    </div>
+    <div class="services-grid reveal reveal-stagger" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:40px;">
+      <p class="eyebrow">Industries We Serve</p>
+      <h2>Recruitment Expertise Across Sectors.</h2>
+    </div>
+  </div>
+  <div class="industry-track" id="industryTrack"></div>
+</section>
+
+<!-- EMPLOYERS + CANDIDATES -->
+<section id="employer-candidate">
+  <div class="wrap">
+    <div class="split employer reveal" id="employers">
+      <p class="eyebrow">For Employers</p>
+      <h2 style="margin-top:16px;">Need Great People? Let's Build Your Team.</h2>
+      <p>Tell us what you are looking for. Our recruitment team will help you connect with suitable candidates.</p>
+      <div class="split-actions">
+        <button class="btn btn-primary" id="toggleEmployerForm">Request Staffing Support</button>
+        <a class="btn btn-ghost" href="https://wa.me/917893107676?text=Hello%20Grzyan%20Staffing%2C%20we%20have%20a%20staffing%20requirement%20and%20would%20like%20to%20discuss%20it." target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+      <div class="form-toggle" id="employerFormWrap">
+        <form class="grzyan-form" id="employerForm" novalidate>
+          <div class="field"><label for="e_company">Company Name</label><input id="e_company" name="company" required></div>
+          <div class="field"><label for="e_contact">Contact Person</label><input id="e_contact" name="contact" required></div>
+          <div class="field"><label for="e_email">Email</label><input id="e_email" type="email" name="email" required></div>
+          <div class="field"><label for="e_phone">Phone</label><input id="e_phone" type="tel" name="phone" required></div>
+          <div class="field"><label for="e_industry">Industry</label><input id="e_industry" name="industry"></div>
+          <div class="field"><label for="e_positions">Required Positions</label><input id="e_positions" name="positions" required></div>
+          <div class="field"><label for="e_openings">Number of Openings</label><input id="e_openings" type="number" min="1" name="openings"></div>
+          <div class="field"><label for="e_location">Location</label><input id="e_location" name="location"></div>
+          <div class="field full"><label for="e_type">Employment Type</label>
+            <select id="e_type" name="type"><option>Permanent</option><option>Temporary</option><option>Contract</option><option>Executive</option><option>Bulk Hiring</option></select>
+          </div>
+          <div class="field full"><label for="e_jd">Job Description</label><textarea id="e_jd" name="jd" rows="3"></textarea></div>
+          <div class="field full"><label for="e_notes">Additional Requirements</label><textarea id="e_notes" name="notes" rows="2"></textarea></div>
+          <div class="full" style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+            <button type="submit" class="btn btn-primary">Submit Requirement</button>
+            <span class="form-msg" id="employerMsg"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="split candidate reveal" id="candidates">
+      <p class="eyebrow">For Job Seekers</p>
+      <h2 style="margin-top:16px;">Your Next Opportunity Starts Here.</h2>
+      <p>Share your profile with our recruitment team and we'll match you with roles suited to your skills and experience.</p>
+      <div class="split-actions">
+        <button class="btn btn-primary" id="toggleCandidateForm">Submit Your Resume</button>
+        <a class="btn btn-ghost" href="https://wa.me/917893107676?text=Hello%20Grzyan%20Staffing%2C%20I%20am%20looking%20for%20job%20opportunities.%20Please%20guide%20me." target="_blank" rel="noopener">Chat With Recruitment Team</a>
+      </div>
+      <div class="form-toggle" id="candidateFormWrap">
+        <form class="grzyan-form" id="candidateForm" novalidate>
+          <div class="field"><label for="c_name">Full Name</label><input id="c_name" name="name" required></div>
+          <div class="field"><label for="c_phone">Phone Number</label><input id="c_phone" type="tel" name="phone" required></div>
+          <div class="field"><label for="c_email">Email</label><input id="c_email" type="email" name="email" required></div>
+          <div class="field"><label for="c_curloc">Current Location</label><input id="c_curloc" name="currentLocation"></div>
+          <div class="field"><label for="c_prefloc">Preferred Location</label><input id="c_prefloc" name="preferredLocation"></div>
+          <div class="field"><label for="c_exp">Experience</label><input id="c_exp" name="experience" placeholder="e.g. 3 years"></div>
+          <div class="field"><label for="c_skills">Skills</label><input id="c_skills" name="skills"></div>
+          <div class="field"><label for="c_qual">Qualification</label><input id="c_qual" name="qualification"></div>
+          <div class="field"><label for="c_role">Preferred Job Role</label><input id="c_role" name="role"></div>
+          <div class="field"><label for="c_resume">Resume Upload (PDF/DOC, max 5MB)</label><input id="c_resume" type="file" name="resume" accept=".pdf,.doc,.docx"></div>
+          <div class="full" style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+            <button type="submit" class="btn btn-primary">Submit Resume</button>
+            <span class="form-msg" id="candidateMsg"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOBS -->
+<section id="jobs">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Open Positions</p>
+      <h2>Search Current Opportunities.</h2>
+    </div>
+    <span class="demo-badge">Demo listings — editable sample content, not live vacancies</span>
+    <div class="jobs-filter reveal">
+      <input type="text" id="jobSearch" placeholder="Search jobs...">
+      <select id="filterLocation"><option value="">All Locations</option></select>
+      <select id="filterIndustry"><option value="">All Industries</option></select>
+      <select id="filterType"><option value="">All Types</option></select>
+      <button class="btn btn-ghost" id="jobSearchBtn">Search</button>
+    </div>
+    <div class="job-list reveal reveal-stagger" id="jobList"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">How It Works</p>
+      <h2>Our Recruitment Process.</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item"><span class="step">Step 01</span><h3>Understand</h3><p>We understand the employer's workforce requirements.</p></div>
+      <div class="tl-item"><span class="step">Step 02</span><h3>Source</h3><p>We identify suitable candidates through multiple sourcing channels.</p></div>
+      <div class="tl-item"><span class="step">Step 03</span><h3>Screen</h3><p>Candidates are evaluated against role requirements.</p></div>
+      <div class="tl-item"><span class="step">Step 04</span><h3>Shortlist</h3><p>Relevant candidates are presented to the employer.</p></div>
+      <div class="tl-item"><span class="step">Step 05</span><h3>Interview</h3><p>Candidate and employer move through the interview process.</p></div>
+      <div class="tl-item"><span class="step">Step 06</span><h3>Place</h3><p>Successful candidates join their new organization.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY GRZYAN -->
+<section id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Why Grzyan</p>
+      <h2>Built For Employers And Candidates Alike.</h2>
+    </div>
+    <div class="why-grid reveal reveal-stagger" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section id="trust">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Trust &amp; Proof</p>
+      <h2>Client Logos &amp; Success Stories.</h2>
+      <p>This section is reserved for verified client logos and testimonials — to be added once supplied.</p>
+    </div>
+    <div class="trust-strip reveal reveal-stagger">
+      <span class="logo-ph">Client Logo</span><span class="logo-ph">Client Logo</span><span class="logo-ph">Client Logo</span><span class="logo-ph">Client Logo</span><span class="logo-ph">Client Logo</span>
+    </div>
+    <div class="testi-grid reveal reveal-stagger">
+      <div class="testi-card"><p>"Testimonial placeholder — awaiting genuine employer feedback."</p><div class="who">— Employer, Industry TBD</div></div>
+      <div class="testi-card"><p>"Testimonial placeholder — awaiting genuine candidate feedback."</p><div class="who">— Candidate, Role TBD</div></div>
+      <div class="testi-card"><p>"Testimonial placeholder — awaiting genuine success story."</p><div class="who">— Success Story TBD</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 style="margin-top:16px;font-size:clamp(1.8rem,3.2vw,2.4rem);">Let's Talk Staffing.</h2>
+        <p style="color:var(--muted);margin-top:14px;">Reach us directly — our team typically responds within one business day.</p>
+        <div class="contact-list">
+          <a class="contact-row" href="tel:+917893107676"><span class="ic">📞</span> <div>Call Now<br><b style="color:var(--white);">+91 7893107676</b></div></a>
+          <a class="contact-row" href="https://wa.me/917893107676" target="_blank" rel="noopener"><span class="ic">💬</span> <div>WhatsApp<br><b style="color:var(--white);">+91 7893107676</b></div></a>
+          <a class="contact-row" href="mailto:info@grzyan.com"><span class="ic">✉️</span> <div>Email Enquiry<br><b style="color:var(--white);">Configure via CONTACT_EMAIL</b></div></a>
+          <div class="contact-row"><span class="ic">🌐</span> <div>Website<br><b style="color:var(--white);">www.grzyan.com · grzyan.online</b></div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <form class="grzyan-form" id="generalForm" novalidate>
+          <div class="field full"><label for="g_name">Name</label><input id="g_name" name="name" required></div>
+          <div class="field full"><label for="g_email">Email</label><input id="g_email" type="email" name="email" required></div>
+          <div class="field full"><label for="g_msg">Message</label><textarea id="g_msg" name="message" rows="4" required></textarea></div>
+          <div class="full" style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+            <button type="submit" class="btn btn-primary">Send Enquiry</button>
+            <span class="form-msg" id="generalMsg"></span>
+          </div>
+        </form>
+        <div class="map-ph" style="margin-top:20px;">Office location map — to be added once an official address is provided.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#hero" class="logo"><span>GRZYAN</span><span>STAFFING</span></a>
+        <p style="margin-top:16px;color:var(--muted);max-width:320px;">Connecting Talent With Opportunity.</p>
+        <div class="social-ph" style="margin-top:20px;">
+          <span title="Social link placeholder">in</span><span title="Social link placeholder">X</span><span title="Social link placeholder">ig</span>
+        </div>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#employers">Employers</a></li>
+          <li><a href="#candidates">Job Seekers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>CONTACT</h4>
+        <ul>
+          <li>+91 7893107676</li>
+          <li>www.grzyan.com</li>
+          <li>grzyan.online</li>
+          <li><a href="#" id="privacyLink">Privacy Policy</a></li>
+          <li><a href="#" id="termsLink">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Grzyan Staffing. All rights reserved.</span>
+      <span>Built for global staffing operations.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ---------- CENTRAL CONFIG ---------- */
+const CONFIG = {
+  company: "Grzyan Staffing",
+  phone: "+91 7893107676",
+  whatsapp: "917893107676",
+  website: "www.grzyan.com",
+  altWebsite: "grzyan.online",
+  email: "CONTACT_EMAIL (configure via environment variable)",
+  services: [
+    ["Permanent Recruitment","End-to-end recruitment for full-time positions.","👤"],
+    ["Temporary Staffing","Flexible workforce solutions for short-term and seasonal requirements.","⏱️"],
+    ["Contract Staffing","Professionals deployed for project-based and contractual requirements.","📄"],
+    ["Executive Search","Specialized search for leadership and senior-level positions.","🎯"],
+    ["IT Recruitment","Technology professionals across software, infrastructure, cloud and data roles.","💻"],
+    ["Non-IT Recruitment","Sales, administration, operations, finance, HR and customer service roles.","🏢"],
+    ["Bulk Hiring","Large-scale recruitment campaigns for high-volume workforce requirements.","📈"],
+    ["Payroll & Workforce Management","Support with workforce administration and payroll-related services.","💳"],
+    ["Recruitment Process Outsourcing","End-to-end or partial recruitment process support.","🔁"],
+    ["Campus / Fresher Hiring","Helping organizations identify and recruit entry-level talent.","🎓"],
+    ["Skilled & Semi-Skilled Workforce","Connecting employers with suitable workforce for operational needs.","🛠️"],
+    ["International / Overseas Recruitment","Editable section for international staffing, subject to legal and regulatory requirements.","🌍"]
+  ],
+  industries: ["IT & Technology","Healthcare","Banking & Financial Services","Retail","Manufacturing","Construction","Logistics & Supply Chain","Hospitality","Education","E-commerce","Telecom","BPO / Customer Support","FMCG","Sales & Marketing","Engineering","Administration"],
+  stats: { candidates: 0, employers: 0, industries: 16, placements: 0 }, // editable placeholders
+  whyGrzyan: [
+    ["Responsive Support","Quick turnaround on employer and candidate requests."],
+    ["Candidate-Focused","Every placement considers the candidate's long-term fit."],
+    ["Employer-Focused Solutions","Recruitment tailored to each business's structure and pace."],
+    ["Industry Specialists","Dedicated focus across key sectors and role types."],
+    ["Fast Communication","Clear, timely updates throughout the process."],
+    ["Flexible Staffing Models","Permanent, temporary, contract and project-based options."],
+    ["Technology-Enabled","A streamlined, tech-driven recruitment workflow."],
+    ["Scalable Hiring Support","From single hires to bulk workforce deployment."]
+  ],
+  demoJobs: [
+    ["Software Engineer (Backend)","IT & Technology","Hyderabad","3-5 yrs","Full-time","Building and maintaining scalable backend services."],
+    ["Customer Support Associate","BPO / Customer Support","Warangal","0-2 yrs","Full-time","Handling inbound customer queries across channels."],
+    ["Site Supervisor","Construction","Bengaluru","4-6 yrs","Contract","Overseeing on-site workforce and daily operations."],
+    ["Accounts Executive","Banking & Financial Services","Hyderabad","2-4 yrs","Full-time","Managing day-to-day accounting and reconciliation."],
+    ["Warehouse Associate","Logistics & Supply Chain","Chennai","0-3 yrs","Temporary","Supporting inventory and dispatch operations."],
+    ["Sales Executive","Sales & Marketing","Pune","1-3 yrs","Full-time","Driving regional sales and client relationships."]
+  ]
+};
+
+/* ---------- RENDER SERVICES ---------- */
+const servicesGrid = document.getElementById('servicesGrid');
+CONFIG.services.forEach((s,i)=>{
+  const waMsg = encodeURIComponent(`Hello Grzyan Staffing, I would like to enquire about ${s[0]}.`);
+  servicesGrid.innerHTML += `
+  <div class="service-card">
+    <span class="service-num">${String(i+1).padStart(2,'0')}</span>
+    <div class="service-icon">${s[2]}</div>
+    <h3>${s[0]}</h3>
+    <p>${s[1]}</p>
+    <div class="service-links">
+      <a href="#contact">Learn More →</a>
+      <a href="https://wa.me/${CONFIG.whatsapp}?text=${waMsg}" target="_blank" rel="noopener">Enquire</a>
+    </div>
+  </div>`;
+});
+
+/* ---------- RENDER INDUSTRIES (duplicated for seamless scroll) ---------- */
+const track = document.getElementById('industryTrack');
+const industriesDoubled = [...CONFIG.industries, ...CONFIG.industries];
+track.innerHTML = industriesDoubled.map(i=>`<div class="industry-pill">${i}</div>`).join('');
+
+/* ---------- RENDER WHY GRZYAN ---------- */
+const whyGrid = document.getElementById('whyGrid');
+whyGrid.innerHTML = CONFIG.whyGrzyan.map((w,i)=>`
+  <div class="why-card"><div class="ic">${String(i+1).padStart(2,'0')}</div><h4>${w[0]}</h4><p>${w[1]}</p></div>
+`).join('');
+
+/* ---------- RENDER JOBS ---------- */
+const jobList = document.getElementById('jobList');
+function renderJobs(list){
+  jobList.innerHTML = list.map(j=>{
+    const waMsg = encodeURIComponent(`Hello Grzyan Staffing, I would like to apply for ${j[0]} (${j[2]}).`);
+    return `
+    <div class="job-card">
+      <div>
+        <span class="job-tag">${j[1]}</span>
+        <h4>${j[0]}</h4>
+        <div class="job-meta"><span>📍 ${j[2]}</span><span>🧭 ${j[3]}</span><span>🕒 ${j[4]}</span></div>
+        <p style="margin-top:8px;font-size:.86rem;color:var(--muted);max-width:520px;">${j[5]}</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/${CONFIG.whatsapp}?text=${waMsg}" target="_blank" rel="noopener">Apply Now</a>
+    </div>`;
+  }).join('') || `<p style="color:var(--muted);">No matching roles found — try adjusting your filters.</p>`;
+}
+renderJobs(CONFIG.demoJobs);
+
+// populate filters
+const locSel = document.getElementById('filterLocation');
+const indSel = document.getElementById('filterIndustry');
+const typeSel = document.getElementById('filterType');
+[...new Set(CONFIG.demoJobs.map(j=>j[2]))].forEach(l=>locSel.innerHTML+=`<option value="${l}">${l}</option>`);
+[...new Set(CONFIG.demoJobs.map(j=>j[1]))].forEach(i=>indSel.innerHTML+=`<option value="${i}">${i}</option>`);
+[...new Set(CONFIG.demoJobs.map(j=>j[4]))].forEach(t=>typeSel.innerHTML+=`<option value="${t}">${t}</option>`);
+
+function applyJobFilters(){
+  const q = document.getElementById('jobSearch').value.toLowerCase();
+  const loc = locSel.value, ind = indSel.value, type = typeSel.value;
+  const filtered = CONFIG.demoJobs.filter(j=>
+    (!q || j[0].toLowerCase().includes(q)) &&
+    (!loc || j[2]===loc) && (!ind || j[1]===ind) && (!type || j[4]===type)
+  );
+  renderJobs(filtered);
+}
+document.getElementById('jobSearchBtn').addEventListener('click', applyJobFilters);
+document.getElementById('jobSearch').addEventListener('keyup', e=>{ if(e.key==='Enter') applyJobFilters(); });
+[locSel, indSel, typeSel].forEach(s=>s.addEventListener('change', applyJobFilters));
+
+/* ---------- NAV SCROLL STATE ---------- */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', ()=>{ nav.classList.toggle('scrolled', window.scrollY > 40); }, {passive:true});
+
+/* ---------- MOBILE MENU ---------- */
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburgerBtn.addEventListener('click', ()=>{
+  const open = mobileMenu.classList.toggle('open');
+  hamburgerBtn.setAttribute('aria-expanded', open);
+});
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
+  mobileMenu.classList.remove('open'); hamburgerBtn.setAttribute('aria-expanded', 'false');
+}));
+
+/* ---------- SCROLL REVEAL ---------- */
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.15});
+revealEls.forEach(el=>io.observe(el));
+
+/* ---------- COUNTERS ---------- */
+const targets = {statCandidates:0, statEmployers:0, statIndustries:CONFIG.stats.industries};
+function animateCounter(el, target){
+  let start=0; const dur=1400; const t0=performance.now();
+  function step(t){
+    const p=Math.min((t-t0)/dur,1);
+    el.textContent = Math.floor(p*target);
+    if(p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+const heroStatsObserver = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      Object.entries(targets).forEach(([id,val])=>animateCounter(document.getElementById(id), val));
+      heroStatsObserver.disconnect();
+    }
+  });
+},{threshold:.4});
+heroStatsObserver.observe(document.getElementById('statCandidates'));
+
+document.querySelectorAll('.stat-card .num').forEach(el=>el.setAttribute('data-count', 0));
+const aboutStatsObserver = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      document.querySelectorAll('.stat-card .num').forEach(el=>animateCounter(el, 0));
+      aboutStatsObserver.disconnect();
+    }
+  });
+},{threshold:.3});
+const firstStat = document.querySelector('.stat-card .num');
+if(firstStat) aboutStatsObserver.observe(firstStat);
+
+/* ---------- FORM TOGGLES ---------- */
+document.getElementById('toggleEmployerForm').addEventListener('click', ()=>{
+  document.getElementById('employerFormWrap').classList.toggle('open');
+});
+document.getElementById('toggleCandidateForm').addEventListener('click', ()=>{
+  document.getElementById('candidateFormWrap').classList.toggle('open');
+});
+
+/* ---------- FORM SUBMIT HANDLING (client-side demo) ---------- */
+function handleFormSubmit(formId, msgId, waTextBuilder){
+  const form = document.getElementById(formId);
+  const msg = document.getElementById(msgId);
+  form.addEventListener('submit', e=>{
+    e.preventDefault();
+    const required = form.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(r=>{ if(!r.value.trim()){ valid=false; r.style.borderColor = '#ff8a8a'; } else { r.style.borderColor=''; } });
+    if(!valid){
+      msg.textContent = 'Please fill in all required fields.';
+      msg.className = 'form-msg show error';
+      return;
+    }
+    msg.textContent = 'Thank you — your enquiry has been received. Our team will contact you shortly. This demo form is not yet connected to a live backend/email service; see deployment notes.';
+    msg.className = 'form-msg show success';
+    form.reset();
+  });
+}
+handleFormSubmit('employerForm','employerMsg');
+handleFormSubmit('candidateForm','candidateMsg');
+handleFormSubmit('generalForm','generalMsg');
+
+/* privacy/terms placeholders */
+['privacyLink','termsLink'].forEach(id=>{
+  document.getElementById(id).addEventListener('click', e=>{
+    e.preventDefault();
+    alert('This page is a placeholder. Add your finalized policy content here before launch.');
+  });
+});
+
+/* ---------- HERO CANVAS: connecting nodes (signature motif) ---------- */
+(function(){
+  const canvas = document.getElementById('heroCanvas');
+  const ctx = canvas.getContext('2d');
+  let w,h,nodes=[];
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function resize(){
+    w = canvas.width = canvas.offsetWidth * devicePixelRatio;
+    h = canvas.height = canvas.offsetHeight * devicePixelRatio;
+  }
+  function initNodes(){
+    const count = window.innerWidth < 768 ? 26 : 46;
+    nodes = Array.from({length:count}, ()=>({
+      x:Math.random()*w, y:Math.random()*h,
+      vx:(Math.random()-.5)*0.25, vy:(Math.random()-.5)*0.25,
+      r: Math.random()*1.6+0.6
+    }));
+  }
+  function tick(){
+    ctx.clearRect(0,0,w,h);
+    nodes.forEach(n=>{
+      n.x+=n.vx; n.y+=n.vy;
+      if(n.x<0||n.x>w) n.vx*=-1;
+      if(n.y<0||n.y>h) n.vy*=-1;
+    });
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        const a=nodes[i], b=nodes[j];
+        const d = Math.hypot(a.x-b.x, a.y-b.y);
+        const maxD = 160*devicePixelRatio;
+        if(d<maxD){
+          ctx.strokeStyle = `rgba(34,211,238,${0.16*(1-d/maxD)})`;
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+        }
+      }
+    }
+    nodes.forEach(n=>{
+      ctx.beginPath();
+      ctx.arc(n.x,n.y,n.r*devicePixelRatio,0,Math.PI*2);
+      ctx.fillStyle = 'rgba(22,131,255,0.75)';
+      ctx.fill();
+    });
+    if(!prefersReduced) requestAnimationFrame(tick);
+  }
+  window.addEventListener('resize', ()=>{ resize(); initNodes(); });
+  resize(); initNodes();
+  tick();
+})();
+
+/* ---------- MAGNETIC BUTTONS ---------- */
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.innerWidth > 900){
+  document.querySelectorAll('.btn-primary, .wa-float').forEach(btn=>{
+    btn.addEventListener('mousemove', e=>{
+      const r = btn.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width/2;
+      const y = e.clientY - r.top - r.height/2;
+      btn.style.transform = `translate(${x*0.18}px, ${y*0.35}px)`;
+    });
+    btn.addEventListener('mouseleave', ()=>{ btn.style.transform=''; });
+  });
+}
+
+/* ---------- ANALYTICS EVENT HOOKS (stub) ---------- */
+function trackEvent(name, data){
+  // Wire this to GA4 / analytics provider using an env-configured ID.
+  if(window.gtag) window.gtag('event', name, data||{});
+  else console.log('[analytics]', name, data||{});
+}
+document.querySelectorAll('a[href^="https://wa.me"]').forEach(a=>a.addEventListener('click', ()=>trackEvent('whatsapp_click')));
+document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click', ()=>trackEvent('phone_click')));
+['employerForm','candidateForm','generalForm'].forEach(id=>{
+  document.getElementById(id).addEventListener('submit', ()=>trackEvent(id+'_submit'));
+});
+</script>
+</body>
+</html>
