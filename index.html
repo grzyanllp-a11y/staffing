@@ -609,8 +609,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="contact-list">
           <a class="contact-row" href="tel:+917893107676"><span class="ic">📞</span> <div>Call Now<br><b style="color:var(--white);">+91 7893107676</b></div></a>
           <a class="contact-row" href="https://wa.me/917893107676" target="_blank" rel="noopener"><span class="ic">💬</span> <div>WhatsApp<br><b style="color:var(--white);">+91 7893107676</b></div></a>
-          <a class="contact-row" href="mailto:info@grzyan.com"><span class="ic">✉️</span> <div>Email Enquiry<br><b style="color:var(--white);">Configure via CONTACT_EMAIL</b></div></a>
-          <div class="contact-row"><span class="ic">🌐</span> <div>Website<br><b style="color:var(--white);">www.grzyan.com · grzyan.online</b></div></div>
+          <a class="contact-row" href="mailto:info@grzyan.com"><span class="ic">✉️</span> <div>Email Enquiry<br><b style="color:var(--white);">info@grzyan.com</b></div></a>
+          <div class="contact-row"><span class="ic">🌐</span> <div>Website<br><b style="color:var(--white);"><a href="https://www.grzyan.com" target="_blank" rel="noopener" style="color:var(--white);">www.grzyan.com</a> · <a href="https://grzyan.online" target="_blank" rel="noopener" style="color:var(--white);">grzyan.online</a></b></div></div>
         </div>
       </div>
       <div class="reveal">
@@ -623,7 +623,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
             <span class="form-msg" id="generalMsg"></span>
           </div>
         </form>
-        <div class="map-ph" style="margin-top:20px;">Office location map — to be added once an official address is provided.</div>
+        <div style="margin-top:20px;border:1px solid var(--line);border-radius:18px;overflow:hidden;">
+          <iframe title="Grzyan Staffing office location — near DMart, Madhapur" src="https://maps.google.com/maps?q=DMart%2C%20Kavuri%20Hills%20Road%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana%20500081&output=embed" width="100%" height="230" style="border:0;display:block;filter:grayscale(0.3) invert(0.9) contrast(0.85);" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div style="padding:16px 18px;background:var(--charcoal);">
+            <div style="font-size:.85rem;color:var(--soft-gray);">D Mart, Kavuri Hills Road, Madhapur, Hyderabad, Telangana 500081</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=DMart+Kavuri+Hills+Road+Madhapur+Hyderabad+Telangana+500081" target="_blank" rel="noopener" style="font-family:var(--ff-mono);font-size:.76rem;color:var(--cyan);display:inline-block;margin-top:8px;">Get Directions →</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -654,9 +660,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
       <div>
         <h4>CONTACT</h4>
         <ul>
-          <li>+91 7893107676</li>
-          <li>www.grzyan.com</li>
-          <li>grzyan.online</li>
+          <li><a href="tel:+917893107676">+91 7893107676</a></li>
+          <li><a href="https://www.grzyan.com" target="_blank" rel="noopener">www.grzyan.com</a></li>
+          <li><a href="https://grzyan.online" target="_blank" rel="noopener">grzyan.online</a></li>
           <li><a href="#" id="privacyLink">Privacy Policy</a></li>
           <li><a href="#" id="termsLink">Terms &amp; Conditions</a></li>
         </ul>
@@ -679,7 +685,7 @@ const CONFIG = {
   whatsapp: "917893107676",
   website: "www.grzyan.com",
   altWebsite: "grzyan.online",
-  email: "CONTACT_EMAIL (configure via environment variable)",
+  email: "info@grzyan.com",
   services: [
     ["Permanent Recruitment","End-to-end recruitment for full-time positions.","👤"],
     ["Temporary Staffing","Flexible workforce solutions for short-term and seasonal requirements.","⏱️"],
